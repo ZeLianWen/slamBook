@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/wzl/work/slambook/ch3/eigen/build",
+  "command": "/usr/bin/c++   -I/home/wzl/work/slambook/ch3/eigen/usr/include  -O3 -g   -o CMakeFiles/eigenMatrix.dir/eigenMatrix.cpp.o -c /home/wzl/work/slambook/ch3/eigen/eigenMatrix.cpp",
+  "file": "/home/wzl/work/slambook/ch3/eigen/eigenMatrix.cpp"
+}
+]

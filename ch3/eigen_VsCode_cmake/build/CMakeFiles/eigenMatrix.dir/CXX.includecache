@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/wzl/work/slambook/ch3/eigen_VsCode_cmake/eigenMatrix.cpp
+iostream
+-
+ctime
+-
+eigen3/Eigen/Core
+-
+eigen3/Eigen/Dense
+-
+
