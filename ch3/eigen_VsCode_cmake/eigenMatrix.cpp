@@ -10,15 +10,15 @@ using namespace Eigen;
 
 int main(int argc, char *argv[])
 {
-    Eigen::Matrix<float, 2, 3, Eigen::ColMajor> matrix_23;
+    Matrix<float, 2, 3,  ColMajor> matrix_23;
     
-    Eigen::Vector3d v_3d;
+    Vector3d v_3d;
     
-    Eigen::Matrix3d matrix_33 = Eigen::Matrix3d::Zero();
+     Matrix3d matrix_33 =  Matrix3d::Zero();
     
-    Eigen::Matrix<double, Eigen::Dynamic, Eigen::Dynamic> matrix_dynamic;
+     Matrix<double,  Dynamic,  Dynamic> matrix_dynamic;
     
-    Eigen::MatrixXd matrix_x;
+     MatrixXd matrix_x;
     
     matrix_23 << 1, 2, 3, 4, 5, 6;
     cout << "matrix_23:"<<endl;
@@ -33,11 +33,11 @@ int main(int argc, char *argv[])
     
     v_3d << 1, 2,3;
     
-    Eigen::Matrix<double, 2,1> result=matrix_23.cast<double>() * v_3d;
+     Matrix<double, 2,1> result=matrix_23.cast<double>() * v_3d;
     cout<<"result:"<<endl;
     cout<<result<<endl;
     
-    matrix_33 = Eigen::Matrix3d::Random();
+    matrix_33 =  Matrix3d::Random();
     cout << "matrix_33:" <<endl;
     cout << matrix_33 <<endl;
     
@@ -48,17 +48,17 @@ int main(int argc, char *argv[])
     cout <<"matrix_33.inverse():"<<matrix_33.inverse()<<endl;
     cout<<"matrix_33.determinant():"<<matrix_33.determinant()<<endl;
     
-    Eigen::SelfAdjointEigenSolver<Eigen::Matrix3d> eigen_slover(matrix_33.transpose()*matrix_33);
+     SelfAdjointEigenSolver< Matrix3d> eigen_slover(matrix_33.transpose()*matrix_33);
     cout<<"eigen_slover.eigenvalues():"<<eigen_slover.eigenvalues()<<endl;
     cout<<"eigen_slover.eigenvectors():"<<eigen_slover.eigenvectors()<<endl;
     
-    Eigen::Matrix<double, MATRIX_SIZE, MATRIX_SIZE> matrix_NN;
-    matrix_NN = Eigen::MatrixXd::Random(MATRIX_SIZE, MATRIX_SIZE);
-    Eigen::Matrix<double, MATRIX_SIZE, 1> v_Nd;
-    v_Nd = Eigen::MatrixXd::Random(MATRIX_SIZE, 1);
+     Matrix<double, MATRIX_SIZE, MATRIX_SIZE> matrix_NN;
+    matrix_NN =  MatrixXd::Random(MATRIX_SIZE, MATRIX_SIZE);
+     Matrix<double, MATRIX_SIZE, 1> v_Nd;
+    v_Nd =  MatrixXd::Random(MATRIX_SIZE, 1);
     
     clock_t time_stt=clock();
-    Eigen::Matrix<double, MATRIX_SIZE, 1> x=matrix_NN.reverse()*v_Nd;
+     Matrix<double, MATRIX_SIZE, 1> x=matrix_NN.reverse()*v_Nd;
     cout<<"time use in normal invers is"<<1000*(clock()-time_stt)/(double)CLOCKS_PER_SEC<<"ms"<<endl;
     
     time_stt=clock();

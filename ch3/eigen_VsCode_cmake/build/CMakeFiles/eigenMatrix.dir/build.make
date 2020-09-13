@@ -60,15 +60,15 @@ include CMakeFiles/eigenMatrix.dir/flags.make
 CMakeFiles/eigenMatrix.dir/eigenMatrix.cpp.o: CMakeFiles/eigenMatrix.dir/flags.make
 CMakeFiles/eigenMatrix.dir/eigenMatrix.cpp.o: ../eigenMatrix.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wzl/work/slambook/ch3/eigen_VsCode_cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/eigenMatrix.dir/eigenMatrix.cpp.o"
-	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/eigenMatrix.dir/eigenMatrix.cpp.o -c /home/wzl/work/slambook/ch3/eigen_VsCode_cmake/eigenMatrix.cpp
+	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/eigenMatrix.dir/eigenMatrix.cpp.o -c /home/wzl/work/slambook/ch3/eigen_VsCode_cmake/eigenMatrix.cpp
 
 CMakeFiles/eigenMatrix.dir/eigenMatrix.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/eigenMatrix.dir/eigenMatrix.cpp.i"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wzl/work/slambook/ch3/eigen_VsCode_cmake/eigenMatrix.cpp > CMakeFiles/eigenMatrix.dir/eigenMatrix.cpp.i
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wzl/work/slambook/ch3/eigen_VsCode_cmake/eigenMatrix.cpp > CMakeFiles/eigenMatrix.dir/eigenMatrix.cpp.i
 
 CMakeFiles/eigenMatrix.dir/eigenMatrix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/eigenMatrix.dir/eigenMatrix.cpp.s"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wzl/work/slambook/ch3/eigen_VsCode_cmake/eigenMatrix.cpp -o CMakeFiles/eigenMatrix.dir/eigenMatrix.cpp.s
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wzl/work/slambook/ch3/eigen_VsCode_cmake/eigenMatrix.cpp -o CMakeFiles/eigenMatrix.dir/eigenMatrix.cpp.s
 
 CMakeFiles/eigenMatrix.dir/eigenMatrix.cpp.o.requires:
 

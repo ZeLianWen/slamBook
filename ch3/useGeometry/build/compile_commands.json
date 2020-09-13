@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/wzl/work/slambook/ch3/useGeometry/build",
+  "command": "/usr/bin/g++-7    -g   -o CMakeFiles/useGeometry.dir/useGeometry.cpp.o -c /home/wzl/work/slambook/ch3/useGeometry/useGeometry.cpp",
+  "file": "/home/wzl/work/slambook/ch3/useGeometry/useGeometry.cpp"
+}
+]
